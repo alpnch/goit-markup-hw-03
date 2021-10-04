@@ -210,8 +210,9 @@ a {
 
 .container-header {
   display: flex;
-  box-sizing: border-box;
-  border: 1px solid #ececec;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 }
 
 .logo {
@@ -350,7 +351,6 @@ a {
   margin: 14px;
   border: 1px solid #eeeeee;
   background: #ffffff;
-  box-sizing: border-box;
 }
 
 .portfolio-titel {
