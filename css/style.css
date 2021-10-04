@@ -95,7 +95,6 @@ a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -205,6 +204,9 @@ a {
 .conteiner {
   width: 1200px;
 }
+.section {
+  padding: 94px 0;
+}
 
 .container-header {
   display: flex;
@@ -238,29 +240,26 @@ a {
   margin-right: 50px;
 }
 
-.heading {
-  height: 600px;
+.section-hero {
   background-color: #2f303a;
 }
 
 .heading-hero {
   width: 700px;
   height: 120px;
+  padding-top: 106px;
   margin: auto;
-  padding-top: 200px;
   text-align: center;
 }
 
 .button-hero {
   width: 200px;
   height: 50px;
-  margin: 30px auto 0;
+  margin: 30px 500px 106px;
   padding: 10px 29px;
 }
 
 .peculiarities-list {
-  height: 101px;
-  margin: 95px auto 0;
   display: flex;
   justify-content: center;
 }
@@ -272,28 +271,30 @@ a {
   height: 100px;
 }
 
+.section-job {
+  padding-top: 0;
+}
+
 .job-heading {
-  margin: 95px auto 0;
+  margin: 0;
   text-align: center;
 }
 .job-list {
   margin: 50px 0 0;
   display: flex;
 }
+
 .job-item {
-  margin: 0 15px 95px 15px;
+  margin: 0 15px;
 }
 
-.team {
-  height: 650px;
+.section-team {
   background: #f5f4fa;
 }
 
 .team-heading {
   margin: 0;
-  width: 265px;
-  height: 40px;
-  padding: 95px 467px 0 467px;
+  text-align: center;
 }
 
 .team-list {
@@ -314,23 +315,22 @@ a {
 }
 
 .footer {
-  height: 250px;
   margin: 0;
-  padding: 60px 0 0 0;
+  padding: 60px 0;
 }
 
 .contacts-list-footer {
   margin: 20px 0 0 15px;
 }
 
-.contact-item-footer:not(:last-child) {
-  margin-bottom: 10px;
+.contact-item-footer {
+  height: 21px;
 }
 
-.portfolio {
-  margin-top: 95px;
-  margin-bottom: 95px;
+.contact-item-footer:not(:last-child) {
+  margin-bottom: 9px;
 }
+
 .button-list {
   justify-content: center;
 }
@@ -348,17 +348,16 @@ a {
 
 .portfolio-item {
   margin: 14px;
-  box-sizing: border-box;
   border: 1px solid #eeeeee;
+  background: #ffffff;
+  box-sizing: border-box;
 }
 
-.portfolio-titel,
-.portfolio-text {
-  margin: 0;
-  margin-left: 25px;
-  margin-bottom: 5px;
+.portfolio-titel {
+  height: 36px;
+  margin: 20px 24px 4px;
 }
-
 .portfolio-text {
-  margin-bottom: 10px;
+  height: 30px;
+  margin: 0px 24px 20px;
 }
