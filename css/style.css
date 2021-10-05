@@ -37,7 +37,8 @@ img {
 
 .logo,
 .dark-team,
-.white-team {
+.white-team,
+.logo-footer {
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -47,6 +48,10 @@ img {
 
 .logo {
   margin: 24px 0;
+  color: var(--third-color);
+}
+
+.logo-footer {
   color: var(--third-color);
 }
 
@@ -186,14 +191,15 @@ img {
   padding: 6px 22px;
   cursor: pointer;
   color: var(--first-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  background: #f5f4fa;
 }
 
 .button:hover,
 .button:focus {
   background-color: var(--third-color);
   color: #fff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-list {
@@ -316,6 +322,13 @@ img {
   margin-top: 50px;
 }
 
+.team-title {
+  margin-bottom: 10px;
+}
+.tumba {
+  padding: 30px 0;
+}
+
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -328,17 +341,13 @@ img {
   text-align: center;
 }
 
-.footer {
-  margin: 0;
-  padding: 60px 0;
+footer {
+  background-color: #2f303a;
+  padding: 60px;
 }
 
-.contacts-list-footer {
-  margin: 20px 0 0 15px;
-}
-
-.contact-item-footer {
-  height: 21px;
+.address {
+  margin-top: 20px;
 }
 
 .contact-item-footer:not(:last-child) {
@@ -357,26 +366,23 @@ img {
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.portfolio-item {
-  margin: 14px;
-  border: 1px solid #eeeeee;
+.portfolio-item:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+
+.tumba-portfolio {
+  margin-top: -5px;
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   background: #ffffff;
-}
-.portfolio-item:nth-child(-n + 3) {
-  margin-top: 0;
-}
-.portfolio-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 
 .portfolio-titel {
-  height: 36px;
-  margin: 20px 24px 4px;
-}
-.portfolio-text {
-  height: 30px;
-  margin: 0px 24px 20px;
+  margin-bottom: 4px;
 }
