@@ -10,6 +10,10 @@ body {
   font-size: 14px;
 }
 
+h1,
+h2,
+h3,
+p,
 ul {
   padding: 0;
   margin: 0;
@@ -22,8 +26,13 @@ h2 {
   line-height: 1.16;
   color: var(--first-color);
 }
+
 a {
   text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .logo,
@@ -37,6 +46,7 @@ a {
 }
 
 .logo {
+  margin: 24px 0;
   color: var(--third-color);
 }
 
@@ -87,6 +97,9 @@ a {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  width: 696px;
+  margin: 0 auto;
+  text-align: center;
   color: #fff;
 }
 
@@ -98,6 +111,10 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 10px 29px;
+  display: block;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
@@ -124,6 +141,11 @@ a {
 .team-text,
 .portfolio-text {
   color: var(--second-color);
+}
+
+.peculiarities-text {
+  line-height: 1.71;
+  max-width: 270px;
 }
 
 .team-text {
@@ -200,7 +222,7 @@ a {
 
 /*Болоки*/
 
-.conteiner {
+.container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -209,33 +231,32 @@ a {
   padding: 94px 0;
 }
 
-.container-header {
-  display: flex;
+.header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #ececec;
 }
 
-.logo {
-  width: 145px;
-  height: 30px;
-  margin: 24px 0 25px 15px;
+.container-header {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  margin-left: 93px;
 }
 
 .navigation-list {
   display: flex;
-  margin: 30px 0 30px 95px;
 }
-.navigation-item {
-  margin-right: 50px;
-}
+
 .navigation-item:not(:last-child) {
   margin-right: 50px;
 }
 
 .contacts-list {
   display: flex;
-  margin: 30px 0 30px 275px;
+  margin-left: auto;
 }
 
 .contact-item:not(:last-child) {
@@ -244,33 +265,24 @@ a {
 
 .section-hero {
   background-color: #2f303a;
+  padding: 200px 0;
 }
 
-.heading-hero {
-  width: 700px;
-  height: 120px;
-  padding-top: 200px;
-  margin: auto;
-  text-align: center;
-}
-
-.button-hero {
-  width: 200px;
-  height: 50px;
-  margin: 30px 500px 200px;
-  padding: 10px 29px;
+.peculiarities {
+  margin: 0 auto;
 }
 
 .peculiarities-list {
   display: flex;
-  justify-content: center;
 }
+
 .peculiarities-item:not(:last-child) {
   margin-right: 30px;
 }
-.peculiarities-item {
-  width: 270px;
-  height: 100px;
+
+.peculiarities-title {
+  box-sizing: content-box;
+  margin-bottom: 10px;
 }
 
 .section-job {
@@ -278,16 +290,15 @@ a {
 }
 
 .job-heading {
-  margin: 0;
   text-align: center;
 }
 .job-list {
-  margin: 50px 0 0;
+  margin-top: 50px;
   display: flex;
 }
 
-.job-item {
-  margin: 0 15px;
+.job-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .section-team {
@@ -301,7 +312,8 @@ a {
 
 .team-list {
   display: flex;
-  margin: 50px 15px 0;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .team-item:not(:last-child) {
