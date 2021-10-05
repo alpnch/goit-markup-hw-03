@@ -249,7 +249,7 @@ a {
 .heading-hero {
   width: 700px;
   height: 120px;
-  padding-top: 106px;
+  padding-top: 200px;
   margin: auto;
   text-align: center;
 }
@@ -257,7 +257,7 @@ a {
 .button-hero {
   width: 200px;
   height: 50px;
-  margin: 30px 500px 106px;
+  margin: 30px 500px 200px;
   padding: 10px 29px;
 }
 
